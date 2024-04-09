@@ -9,8 +9,6 @@ import { RootState, incrementCounter } from 'src/store/store';
 import { COLORS, MAPS_STYLE, MAPS_TOKEN } from 'src/constants/Constants';
 
 import styled from 'styled-components/macro';
-import { Center } from 'src/pages/Logout.page';
-import { CircularLoader } from 'src/components/common/loaders/CircularLoader';
 
 mapboxgl.accessToken = MAPS_TOKEN;
 
