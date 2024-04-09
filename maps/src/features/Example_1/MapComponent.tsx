@@ -12,17 +12,9 @@ import styled from 'styled-components/macro';
 
 mapboxgl.accessToken = MAPS_TOKEN;
 
-const Container = styled.div`
- display: flex;
- flex-direction: column;
- width: 100%;
- height: fit-content;
-
-`;
-
 const MapContainer = styled.div`
   width: 100%;
-  height: calc(100vh);
+  height: 100vh;
 `;
 
 interface Marker {
@@ -99,12 +91,7 @@ export default function MapComponent() {
         }
     }, [map, counters]);
 
-    return (
-        <Container>
-            <MapContainer id="map" />
-        </Container>
-
-    );
+    return <MapContainer id="map" />;
 };
 
 
